@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Predictor</title>
+
+    <link href="assets/syles.css" rel="stylesheet">
+</head>
+<body class="main-bg">
+    
+    <header>
+        <h1 id="title">Heart Disease Predictor</h1>
+        <p id="description">Use Machine Learning for heart disease classification </p>
+    </header>
+    
+    <form id="survey-form" action="">
+        <div class="form-container">
+            <section class="person-detail">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            </section>
+
+            <section class="patient-detail">
+            
+                <label for="number" id="number-label">Age</label>
+                <input id="number" type="number" name="age" placeholder="Age" min="45" max="110" required>
+                
+                <fieldset>
+                    <legend>Gender</legend>
+                    <div class="block">
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male" id="gender-label">Male</label>
+                        
+                    </div>
+                    <div class="block">
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female" id="gender-label-f">Female</label>
+                    </div>
+                </fieldset>
+                
+
+                <label for="dropdown" id="cp-label">Chest Pain Type</label>
+                <select name="chest-pain-type" id="dropdown">
+                    <option value="type-1">Type 1</option>
+                    <option value="type-2">Type 2</option>
+                    <option value="type-3">Type 3</option>
+                    <option value="type-4">Type 4</option>
+                </select>
+
+                <label for="trestbps" id="rest-bp-label">Resting Blood Pressure</label>
+                <input type="number" name="rest-bp" id="rest-trestbps" placeholder="Enter value" required>
+
+                <label for="trestbps" id="rest-bp-label">Serum Cholestrol</label>
+                <input type="number" name="rest-bp" id="rest-trestbps" placeholder="Enter value" required>
+                
+                <label for="fbs" id="fasting-bs-label">Fasting Blood Sugar > 120</label>
+                <select name="fbs-over-120" id="fbs">
+                    <option value="type-1">True</option>
+                    <option value="type-2">False</option>
+                </select>
+
+                <label for="restecg" id="restecg-label">Resting ECG</label>
+                <select name="restecg" id="restecg">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+
+                <label for="thalach" id="thalach-label">Maximum Heart Rate achieved</label>
+                <input id="thalac" name="thalac" type="number" placeholder="Enter value" required>
+
+                <label for="exang" id="exang-label">Exercise Induced Angina</label>
+                <select name="exang" id="exang">
+                    <option value="no">0</option>
+                    <option value="yes">1</option>
+                </select>
+        
+                <label for="oldpeak" id="oldpeak-label">ST depression induced by exercise relative to rest</label>
+                <input id="oldpeak" name="oldpeak" type="number" placeholder="Enter value" required>
+
+                <label for="slope" id="slope-label">The slope of the peak exercise ST segment</label>
+                <select name="slope" id="slope">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+
+                <label for="ca" id="ca-label">number of major vessels colored by flourosopy</label>
+                <select name="ca" id="ca">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="thal" id="thal-label">Thal</label>
+                <select name="thal" id="thal">
+                    <option value="normal">3</option>
+                    <option value="fixed-defect">6</option>
+                    <option value="reversible-defect">7</option>
+                </select>
+                
+                <fieldset>
+                    <legend>Improvments</legend>
+                    <div class="block">
+                        <input id="f1" type="checkbox" name="improvement-1" value="f1">
+                        <label for="f1" id="f1-label">Improve Feature 1</label>
+                    </div>
+                    <div class="block">
+                        <input id="f2" type="checkbox" name="improvement-2" value="f2">
+                        <label for="f2" id="f2-label">Improve Feature 2</label>
+                    </div>
+
+                </fieldset>
+
+                <label for="comment">Feedback or suggestions?</label>
+                <textarea id="comment" rows="7" cols="50" placeholder="Enter your comments here..."></textarea>
+
+                <button id="submit">SUBMIT</button>
+            </section>
+         </div>
+        
+    </form>
+    
+    
+    
+</body>
+</html>
