@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Yusei+Magic&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yusei Magic', sans-serif;
+    background-color: beige;
+    font-size: 0.9em;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+/* header */
+header {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    position: sticky;
+    left:0;
+    right: 0;
+    top: 0;
+    background-color: beige;
+    z-index: 1;
+}   
+
+#logo-container, #nav-links {
+    display: flex;
+}
+
+#logo-container {
+    flex: 1;
+}
+
+#header-img {
+    width: 15%;
+}
+
+#title {
+    margin-left: 2%;
+}
+
+#nav-bar {
+    flex: 1;
+}
+
+#nav-links {
+    list-style: none;
+    justify-content: space-around;
+    
+}
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color:rgb(255, 123, 0);
+}
+
+/* signup */
+
+#signup {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#signup h2 {
+    margin-bottom: 20px;
+}
+
+#email {
+    width: 60%;
+    padding: 5px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+#submit {
+    display: block;
+    background-color: rgb(243, 230, 52);
+    margin: 15px auto;
+    padding: 5px 20px;
+    border-style: none;
+    border-radius: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+/* section-container */
+
+#section-container {
+    width: 80%;
+    margin:  auto;
+    padding: 60px 20px 30px 20px;
+    font-size: 0.9em;
+}
+
+.features {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.icon-text {
+    padding: 0 10px;
+    width: 70%;
+    display: inline-block;
+}
+
+.icon-text > h3 {
+    margin-bottom: 0;
+}
+
+.icon-text > p {
+    margin-top: 0;
+}
+
+i {
+    color:rgb(255, 123, 0);
+    padding: 40px;
+    font-size: 4em;
+    position: relative;
+    top: -5px;
+}
+
+.icon-text h3 {
+    font-size: 20px;
+    font-weight:bold;
+}
+
+/* Section-video*/
+#video {
+    margin-top: 0;  
+    padding-top: 0; 
+}
+
+iframe {
+    display:block;
+    margin: 0 auto;
+}
+
+/* Prices */
+
+#price-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.card {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.card ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.select-button {
+    padding: 10px 15px;
+    margin-top: 30px;
+    border-style: none;
+    background-color: rgb(243, 230, 52);
+    font-size: 1.1em;
+    border-radius: 3px;
+}
+
+.card > h4 {
+    background-color: rgb(218, 214, 162);
+    margin: 0;
+    padding: 15px;
+}
+
+.card > p {
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 5px 0 0 0;
+}
+
+.card li {
+    line-height: 2em;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(218, 214, 162);
+    width: 70%;
+    margin: auto;
+    padding: 5px 0;
+}
+
+footer ul{
+    list-style: none;
+    padding: 10px 10px 0 0;
+    margin: 0;
+    text-align: right;
+}
+
+footer li {
+    display: inline;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 0 10px 0 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer p {
+    text-align: right;
+    margin-top: 5px;
+    color: rgb(90, 88, 88);
+    padding-right: 10px;
+}
+
+/* Animations button */
+button:hover {
+    animation-name: toyellow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes toyellow {
+    to {
+        background-color: rgb(255, 123, 0);
+    }
+}
+
+/* Media Query*/
+
+/* For tablets*/
+@media screen and (max-width: 1024px) {
+    i {
+        font-size: 2em;
+    }
+    
+}
+
