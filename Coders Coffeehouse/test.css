@@ -1,0 +1,6 @@
+.background {
+    width: 100%;
+    height: 300px;
+
+    background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
+}

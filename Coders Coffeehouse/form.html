@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="description" content="Complete our survey for your chance to win a years supply of coffee from Coders Coffeehouse.">
+        <meta name="keywords" content="coffeehouse, coffee, developers cafe, free wifi, dublin">
+        <meta name="author" content="Coders Coffeehouse">
+
+        <link rel="stylesheet" href="/assets/style.css">
+
+        <title>Win a years supply of coffee from Coders Coffeehouse</title>
+    </head>
+
+    <body>
+        <header class="form-page-header page-header text-center">
+            <div class="vertical-center">
+                <h1>Win a years supply of coffee from Coders Coffeehouse</h1>
+                <p>Complete our survey for your chance to win!</p>
+            </div>
+        </header>
+
+        <nav class="black-background text-center">
+            <a href="/index.html">HOME</a>
+            <a href="/index.html#drinks">DRINKS MENU</a>
+            <a href="/index.html#contact">CONTACT</a>
+            <a href="/form.html">WIN FREE COFFEE</a>
+        </nav>
+
+        <form action="https://formdump.codeinstitute.net" method="POST">
+            <fieldset>
+                <legend>YOUR DETAILS</legend>
+                
+                <div class="name-box">
+                    <label class="block-label" for="name-field">Name</label>
+                    <input id="name-field" name="name" type="text" placeholder="Your name" required>
+                </div>
+
+                <div class="email-box">
+                    <label class="block-label" for="email-field">Email</label>
+                    <input id="email-field" name="name" type="email" placeholder="Your email" required>
+                </div>
+
+                <div>
+                    <label for="age">Age</label>
+                    <select class="block-label" id="age" name="age" required>
+                        <option value="under-20">Under 20</option>
+                        <option value="20s">20-29</option>
+                        <option value="30s">30-39</option>
+                        <option value="40s">40-49</option>
+                        <option value="50s">50-59</option>
+                        <option value="60+">60+</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>OUR PRODUCTS</legend>
+                <div>
+                    <label for="fav-coffee">What is your favourite coffee?</label>
+                    <input id="fav-coffee" list="coffees" name="fav-coffee" required>
+                    <datalist id="coffees">
+                        <option value="Latte">
+                        <option value="Americano">
+                        <option value="Cappucino">
+                        <option value="Espresso">
+                        <option value="Flat-white">
+                    </datalist>
+                </div>
+
+                <div>
+                    <p>How many cups of coffee do your drink a day?</p>
+                    
+                    <input id="0-2cups" name="cups-a-day" value="0-2cups" type="radio" required>
+                    <label for="0-2cups">0 to 2 cups</label>
+
+                    <input id="3-5cups" name="cups-a-day" value="3-5cups" type="radio" required>
+                    <label for="3-5cups">3 to 5 cups</label>
+
+                    <input id="6-8cups" name="cups-a-day" value="6-8cups" type="radio" required>
+                    <label for="6-8cups">6 to 8 cups</label>
+
+                    <input id="9+cups" name="cups-a-day" value="9+cups" type="radio" required>
+                    <label for="9+cups">9 or more cups</label>
+                </div>
+
+                <div>
+                    <p>How often do you visit Coders Coffeehouse?</p>
+
+                    <input id="once-week" name="visit-frequency" value="once-week" type="radio" required>
+                    <label for="once-week">Once a week</label>
+
+                    <input id="twice-week" name="visit-frequency" value="twice-week" type="radio" required>
+                    <label for="twice-week">Twice a week</label>
+
+                    <input id="once-fortnight" name="visit-frequency" value="once-fortnight" type="radio" required>
+                    <label for="once-fortnight">Once a fortnight</label>
+
+                    <input id="not-often" name="visit-frequency" value="not-often" type="radio" required>
+                    <label for="not-often">Not often</label>
+                </div>
+
+                <div>
+                    <p>Which of our coders coffeehouse snacks do you enjoy?</p>
+                    
+                    <input id ="browniw" name="fav-snack" type="checkbox" required>
+                    <label for="brownie">Brownies</label>
+                    
+                    <input id="cookie" name="fav-snack" type="checkbox" required>
+                    <label for="cookie">Cookies</label>
+
+                    <input id="nachos" name="fav-snack" type="checkbox" required>
+                    <label for="nachos">Nachos</label>
+
+                    <input id ="croissants" name="fav-snack" type="checkbox" required>
+                    <label for="croissants">Croissants</label>
+
+                    <input id="scones" name="fav-snack" type="checkbox" required>
+                    <label for="scones" >Scones</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>FEEDBACK</legend>
+
+                <div>
+                    <label for="feedback">How can we improve your experience with us?</label>
+                    <textarea id="feedback" name="feedback" cols="87" rows="3"></textarea>
+                </div>
+            </fieldset>
+
+            <div id="terms">
+                <h5 class="underline">OFFICIAL RULES FOR CODERS COFFEEHOUSE PRIZE DRAW</h5>
+                <p>NO PURCHASE NECESSARY TO ENTER OR WIN. A purchase does not improve chances
+                    of winning. Subject to all federal, state and local laws and regulations. VOID WHERE
+                    PROHIBITED OR RESTRICTED</p>
+                <p><span class="bold">Sponsor: </span>Coders Coffeehouse, 42 Coffeebean street, Dublin</p>
+    
+                <p><span class="bold">Eligibility: </span>
+                    The Coders Coffeehouse Prize Drawing for 2020 (“Promotion”) is open to all individuals who (i) are 21
+                    years of age or older at the
+                    time of entry, excluding of Sponsor and its
+                    parents, subsidiaries, affiliated companies and agents, and their immediate families or those
+                    living in the same household, are not eligible to enter.</p>
+    
+                <p><span class="bold">Promotion Period: </span>
+                    Entrants may participate in the Promotion between 00:01am GMT on
+                    January 1, 2020 through 23:01AM GMT on December 31, 2020 (“Promotion Period”). Sponsor's
+                    server is the official clock for this Promotion.
+                </p>
+    
+                <p><span class="bold">Release: </span>
+                    BY ENTERING THE PROMOTION, ENTRANTS RELEASE AND HOLD HARMLESS
+                    SPONSOR AND ITS PARENTS, SUBSIDIARIES, AND AFFILIATED COMPANIES, AND
+                    EACH OF THEIR DIRECTORS, OFFICERS, EMPLOYEES, REPRESENTATIVES,
+                    VENDORS, PARTNERS AND AGENTS, FROM ANY AND ALL LIABILITY WHATSOEVER,
+                    AND WAIVE ANY AND ALL CAUSES OF ACTION, FOR OR RELATED TO ANY CLAIMS,
+                    COSTS, INJURIES, LOSSES, LIABILITIES, OR DAMAGES OF ANY KIND (INCLUDING,
+                    WITHOUT LIMITATION, PERSONAL INJURY, DEATH, DAMAGE TO OR DESTRUCTION OF
+                    PROPERTY, RIGHTS OF PUBLICITY OR PRIVACY, DEFAMATION OR PORTRAYAL IN A
+                    FALSE LIGHT) ARISING OUT OF OR IN CONNECTION WITH THE PROMOTION OR THE
+                    ACCEPTANCE, POSSESSION, OR USE OF THE PRIZE, WHETHER UNDER A THEORY OF
+                    CONTRACT, WARRANTY, TORT (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE,
+                    WHETHER ACTIVE, PASSIVE, OR IMPUTED), STRICT LIABILITY, PRODUCT LIABILITY,
+                    CONTRIBUTION, OR ANY OTHER THEORY, TO THE EXTENT PERMITTED BY LAW.
+                </p>
+    
+                <p><span class="bold">Winner Notification and Acceptance: </span>
+                    The potential winners will be notified on or about
+                    January 2nd 2021, via email. Winner may waive the right to receive the prize. The prize is nonassignable
+                    and non-transferable. Cash will not be awarded in lieu of the prize, but Sponsor
+                    reserves the right to substitute a prize of equal or greater value due to unavailability. The winner
+                    is solely responsible for reporting and payment of any federal, state and local taxes and for
+                    compliance with all laws associated with the use of the prize. The winner may be asked to
+                    execute and return to Sponsor an affidavit of eligibility and a liability release (except where
+                    prohibited by law) within fourteen (14) days of attempted notification. Non-compliance within
+                    that time period or failure to comply with any term or condition of these Official Rules may, at
+                    the sole discretion of Sponsor, result in a winner's disqualification and the selection of an
+                    alternate winner. Return of any prize/prize notification as undeliverable will result in
+                    disqualification and an alternate winner will be selected. All decisions of Sponsor are final and
+                    binding.
+                </p>
+    
+                <p><span class="bold">Rules: </span>
+                    By entering the Promotion, entrant agrees to abide by the terms and conditions of these
+                    Official Rules, which are final on all matters pertaining to the Promotion, and warrants that
+                    he/she is eligible to participate in the Promotion. Submission of entry constitutes entrant’s
+                    consent for Sponsor to use entrant’s email address for purposes of marketing and promotion of
+                    Sponsor’s products and services.
+                </p>
+            </div>
+
+            <input type="submit" class="block-label" value="Enter prize draw">
+            <input type="reset" value="reset form">
+            
+        </form>
+    </body>
+</html>

@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1,h2,h3 {
+	font-family: 'Merienda One', 'Brush Script MT', cursive;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul{
+    padding: 0;
+}
+
+ol {
+    padding: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.vertical-center{
+    position: relative;
+    top: 30%;
+}
+
+h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+h2 {
+	font-size: xx-large;
+}
+
+/* HEADER */
+header {
+    color: beige;
+    background-image: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffeehouse.jpg');
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* NAV */
+
+nav {
+    padding: 1rem;
+}
+
+.black-background {
+    background: black;
+}
+
+nav > a {
+    text-decoration: none;
+    color:beige;
+    margin: 1rem;
+}
+
+nav > a:hover {
+    color:silver;
+}
+
+/* Reasons to love us Section */
+.one-third-width{
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+.reasons-box {
+    background-color: chocolate;
+    width: 96%;
+    margin: 2%;
+    padding: 10px 5px 25px 5px;
+    border-radius: 8px;
+    color: white;
+    position: relative;
+    left: 20%;
+    top: 30px;
+
+}
+
+.reasons-list {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.two-third-width {
+    width: 66%;
+    display: inline-block;
+    float: left;
+}
+
+.two-third-width > img {
+    width: 96%;
+    border-radius: 8px;
+    margin: 2%;
+}
+.spacer {
+    clear: both;
+}
+
+/* Drinks Menu */
+
+.drinks-box {
+    width: 33%;
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+#drinks {
+    color: white;
+    background: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffee-beans.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 80px;
+    padding: 1rem 0;
+}
+
+#coffee-box {
+    background-color: brown;
+    position: relative;
+    left: 70px;
+    top: -15px;
+    float: left;
+}
+
+#tea-box {
+    background-color:  #6f4e37;
+    position: relative;
+    z-index: 1;
+}
+
+#cold-drinks-box {
+    background-color: chocolate;
+    position: relative;
+    right: 70px;
+    top: -15px;
+    float: right;
+}
+
+/* Contact */
+#contact {
+    margin-bottom: 50px;
+}
+
+.contact-boxes-container {
+    width:66%;
+    margin: 0 auto;
+}
+
+.contact-box-left {
+    width: 250px;
+    float: left;
+    margin-top: -20px;
+    text-align: left;
+}
+
+.contact-box-right {
+    width: 250px;
+    float: right;
+    margin-top: -20px;
+    text-align: right;
+}
+
+.contact-box-center {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+}
+
+footer {
+    background-color: #6f4e37;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+footer > a {
+    text-decoration: none;
+    color: beige;
+    padding: 0 15px;
+    font-size: 0.8rem;
+}
+
+footer > span {
+    color: silver;
+    text-transform: uppercase;
+}
+
+footer > p {
+    color: silver;
+}
+
+#map-wrapper {
+    height: 300px;
+    margin-bottom: 107px;
+}
+#map {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+/* FORM page header */
+
+.page-header {
+	height: 50vh;
+	background: center 75% / cover no-repeat;
+}
+
+.form-page-header {
+    color: beige;
+    background-image: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/table.jpg');
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* FORM */
+
+form {
+    width: 700px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.name-box {
+    position: relative;
+    float: left;
+}
+
+.email-box {
+    position: relative;
+    float: left;
+}
+
+.block-label {
+    display: block;
+}
+
+/* input types*/
+
+input[type=text], input[type=email], input[list=coffee] {
+    height: 30px;
+    width: 90%;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+
+input[type=submit] {
+	margin-top: 20px;
+	margin-left: 0.75rem;
+	padding: 0.75rem;
+	background-color: #5e361b;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+input[type=reset] {
+
+	margin-top: 20px;
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: white;
+    color: #5e361b;
+    border: 1px solid #5e361b;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+/* terms */
+#terms {
+    height: 200px;
+    width: 90%;
+    padding: 0.5rem;
+    margin: 1.5rem 0 0 15px;
+    border: 1px solid grey;
+    overflow: scroll;
+}
+
+fieldset {
+    border: none;
+	margin-top: 20px;
+}
+
+input[list=coffees] {
+    width: 45%;
+}
+
+select {
+    height: 36px;
+    width: 100px;
+    padding-left: 10px;
+}
+
+legend {
+	font-size: large;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 20px 0 10px 0;
+}
+
+
